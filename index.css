@@ -1278,3 +1278,173 @@
     margin-top: 0;
   }
 }
+/* Section styles */
+.section-welcome {
+  font-family: 'Montserrat', sans-serif;
+  padding: 40px 20px;
+  background-color: #fff;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Content wrapper */
+.content-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Text on the left */
+.welcome-text {
+  flex: 1;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.welcome-text p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Image on the right */
+.welcome-image {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-left: 100px;
+}
+
+/* Header content */
+.header-content {
+  margin-bottom: 30px;
+  text-align: left; /* Align title to the left */
+}
+
+.welcome-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #B29A36; /* Palette-3-dark-2 */
+}
+
+.welcome-line {
+  width: 00px;
+  height: 3px;
+  background-color: #B29A36; /* Palette-3-dark-1 */
+  margin: 10px 0;
+}
+
+/* Button styles */
+.btn-learn-more {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight:500;
+  text-decoration: none;
+  color: #333;
+  border: 2px solid #B29A36;
+  border-radius: 30px;
+  transition: all 0.3s;
+  margin-top: 40px;
+}
+
+.btn-learn-more:hover {
+  color: #fff;
+  background-color: #B29A36;
+  border-color: #B29A36;
+}
+
+/* Media Queries */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack items vertically */
+    text-align: center;
+  }
+
+  .welcome-text {
+    padding-right: 0; /* Remove padding */
+    text-align: center; /* Center-align text */
+  }
+
+  .welcome-image {
+    width: 70%; /* Shrink image size */
+    margin: 20px auto 0; /* Center image with spacing */
+  }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .content-wrapper {
+    flex-direction: column; /* Ensure stacking for mobile */
+    text-align: center;
+  }
+
+  .welcome-text {
+    text-align: center; /* Center-align text */
+    padding-right: 0; /* Remove padding */
+  }
+
+  .welcome-image {
+    width: 100%; /* Full width for mobile */
+    margin: 20px 0; /* Add spacing */
+  }
+
+  .welcome-title {
+    font-size: 2rem; /* Adjust title size */
+  }
+
+  .welcome-line {
+    width: 300px; /* Reduce the line width */
+  }
+
+  .welcome-text p {
+    font-size: 0.95rem; /* Slightly smaller font size */
+    line-height: 1.6;
+  }
+
+  .btn-learn-more {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Adjust position as needed */
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Makes the button circular */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover img {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+@media (max-width: 768px) {
+  .whatsapp-button {
+    bottom: 10px; /* Moves button higher */
+    right: 10px;
+    width: 50px; /* Smaller size for mobile */
+    height: 50px;
+  }
+}
